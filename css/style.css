@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    
+    
+}
+
+:root{
+    --primary-color:#E96269;
+    --secondary-color:#f4f0f4;
+    --light-color:#ffffff;
+    --bgColor-1:#171a1c;
+    --bgColor-2:#808080;
+}
+header{
+    background-image: url(../images/Screenshot\ 2023-10-16\ 060354.png);
+    min-height: 100vh;
+    background-position:center center;
+    background-size: cover;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.216);
+}
+header h1{
+    color: var(--primary-color);
+}
+.navbar-nav .nav-link.active{
+    color:var(--bgColor-1);
+     font-weight: bold;
+     transition: 2s;
+     
+
+}
+.navbar-nav .nav-link.active:hover{
+    color:var(--primary-color);
+   
+}
+
+.nav-link{
+color:var(--bgColor-1);
+font-weight: bold;
+transition: 2s;
+}
+.nav-link:hover{
+    color: var(--primary-color);  
+    
+}
+.nav-link:hover{
+    color: var(--primary-color);  
+}
+span.navbar-toggler-icon{
+    color: var(--primary-color);
+
+}
+#Home p{
+    max-width: 500px;
+}
+.fa-solid{
+    color: var(--primary-color);
+    transition: 2s;
+}
+.fa-solid:hover{
+    color:var(--bgColor-1);
+   
+}
+.btn{
+    background-color: none;
+    border:solid 3px var(--bgColor-1);
+    transition: 2s;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+    border:solid 3px var(--bgColor-1);
+}
+.gear{
+    background-color: var(--bgColor-2);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    top:20%;
+    transition: 2s;
+    z-index: 90000000;
+
+}
+.gear i{
+    color:var(--bgColor-1);
+    transition: 2s;
+}
+.gear i:hover{
+    color: var(--light-color);
+}
+.gear:hover{
+    background-color: var(--light-color);
+}
+.mouse{
+    width:30px;
+    height: 50px;
+    border: 2px solid var(--primary-color);
+    bottom:15%;
+    position: relative;
+    animation: jump 1s infinite linear;
+}
+.mouse::after{
+    content:"";
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    bottom:5px;
+    right: 50%;
+    transform: translateX(-50%);
+}
+@keyframes jump{
+    0%{
+        bottom:20%;
+    }
+    5%{
+        bottom:15%;
+    }
+    10%{
+        bottom:17%;
+    }
+}
+.comp{
+    
+    max-width: 500px;
+    color:var(--bgColor-1);
+}
+.comp::after{
+    content:"|";
+    animation: typing 3s linear 3s infinite alternate ;
+}
+@keyframes typing{
+    0%{content:"No |";}
+    3%{content:"Nou |";}
+    8%{content:"Nour |";}
+    12%{content:"Nourh |";}
+    15%{content:"Nourhan |";}
+    18%{content:"Nourhan F |";}
+    21%{content:"Nourhan Fa |";}
+    25%{content:"Nourhan Faw |";}
+    28%{content:"Nourhan Fawz |";}
+    31%{content:"Nourhan Fawzy. |";}
+    35%{content:"Nourhan Fawz |";}
+    38%{content:"Nourhan Faw |";}
+    42%{content:"Nourhan Fa |";}
+    45%{content:"Nourhan F |";}
+    49%{content:"Nourhan |";}
+    52%{content:"Nourh |";}
+    56%{content:"Nou |";}
+    60%{content:"N |";}
+    64%{content:" |";}
+    68%{content:"F |";}
+    71%{content:"Fro |";}
+    74%{content:"Fron |";}
+    78%{content:"Front |";}
+    81%{content:"Front En|";}
+    85%{content:"Front End |";}
+    88%{content:"Front End De |";}
+    91%{content:"Front End Dev |";}
+    94%{content:"Front End Devel |";}
+    96%{content:"Front End Develop |";}
+    98%{content:"Front End Develope |";}
+    100%{content:"Front End Developer. |";}
+}
+#About{
+    background-color: var(--light-color);
+}
+span{
+    color:var(--primary-color)
+}
+.about-content p{
+    color:var(--bgColor-2);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+.icon{
+    width: 2.5rem;
+    height: 2.5rem; 
+    border:2px solid grey;
+    transition: 0.5s;
+}
+.icon:hover{
+    scale: 1.2;
+}
+.services-title p{
+    max-width: 500px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+.skills-h2{
+    color: var(--primary-color);
+}
+ul {
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+}
+.skills-img{
+    width: 80px;
+}
+li{
+    list-style: none;
+    
+}
+/*work------*/
+.work p{
+    max-width: 500px;
+}
+a.button {
+    background-color:var(--primary-color);
+    padding: 10px 12px;
+    margin: 10px;
+    width: auto;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    color:var(--light-color);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+a.button:hover{
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+.btn_skills{
+    background-color: var(--light-color);
+    color: var(--bgColor-2);
+}
+
+.work-content{
+    transition: 0.5s;
+    
+  
+    
+}
+.work-content:hover{
+   opacity: 1  !important;
+}
+.img-bayza{
+    height: 300px;
+}
+.nav-pills .nav-link.active:hover{
+    color: var(--primary-color)!important;
+    text-decoration: underline;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent;
+
+}
+/**Experience**/
+#Experience h5{
+   color: var(--primary-color);
+   transition: all 2s;
+   cursor: pointer;
+
+}
+#Experience h5:hover{
+    text-decoration: underline;
+    color:#f3313b;
+}
+.gwa{
+    border:solid 3px rgba(0, 0, 0, 0.026);
+    transition: 0.5s;
+    
+}
+.gwa:hover{
+    background-color: white!important;
+    border:solid 3px rgba(0, 0, 0, 0.500);
+}
+/**contact**/
+.contact p{
+    max-width: 500px;
+}
+.contact{
+    background-color: rgba(128, 128, 128, 0.121);
+
+}
+.last{
+    text-decoration: none;
+    transition: 1s;
+}
+.last:hover{
+    text-decoration: underline;
+}
+.ul-experience li{
+    list-style-type: square;
+    
+}
+
+.experience h5{
+    text-indent: 10px;
+}
